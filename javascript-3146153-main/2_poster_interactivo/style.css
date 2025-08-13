@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pantalla{
+    position: relative; 
+    width: 750px;
+    height: 500px;
+    margin: auto;
+
+}
+.pantalla .fondo{
+    width: 100%;
+}
+.ladrillo-1{
+    position: absolute;
+    top: 47%;
+    left: 21%;
+    width: 25%;
+    height: auto;
+}
+.ladrillo-2{
+    position: absolute;
+    top: 30%;
+    left: 49%;
+    width: 20%;
+    height: auto;
+}
+.moneda-1{
+    position: absolute;
+    top: 37%;
+    left: 26%;
+    width: 6%;
+    height: auto;
+    cursor: pointer;
+
+}
+.moneda-2{
+    position: absolute;
+    top: 37%;
+    left: 35%;
+    width: 6%;
+    height: auto;
+    cursor: pointer;
+
+}
+.moneda-3{
+    position: absolute;
+    top: 54%;
+    left: 89%;
+    width: 6%;
+    height: auto;
+    cursor: pointer;
+
+}
+.corazon{
+    position: absolute;
+    top: 19%;
+    left: 55%;
+    width: 7%;
+    height: auto;
+    cursor: pointer;
+}
+/*clase para asignar animacion*/
+.saltar{
+animation: salto 0.06s ease forwards;
+}
+
+
+@keyframes salto{
+    0%{transform: translateY(0); opacity: 1;}
+    30%{transform: translateY(-60px);}
+    100%{transform: translateY(0px); opacity: 0;}
+}
+
+
+/* Contador monedas y corazones */
+
+    .hud {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+      font-family: 'Arial', sans-serif;
+      font-size: 18px;
+      color: white;
+      z-index: 1000;
+    }
+
+    .hud-item {
+      display: flex;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 5px 10px;
+      border-radius: 8px;
+    }
+
+    .hud-item img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+
+
+
+
+@keyframes mover-lateral {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.ladrillo-1 {
+    position: absolute;
+    top: 47%;
+    left: 18%;
+    animation: mover-lateral 2s linear infinite;
+}
+
+.ladrillo-2{
+    position: absolute;
+    top: 32%;
+    left: 53%;
+    animation: mover-lateral 4s linear infinite;
+}
