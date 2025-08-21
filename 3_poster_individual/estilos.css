@@ -3,6 +3,18 @@
     padding: 0;
 
 }
+.d-none{
+  display: none;
+
+}
+.navegacion{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 20px;
+   gap: 20px;
+  
+}
 .pantalla{
     position: relative;
     width: 750px;
@@ -10,8 +22,16 @@
     margin: auto;
     overflow: hidden;
 }
+.filter-style1 {
+  filter: hue-rotate(90deg) saturate(1.5);
+}
 .fondo{
     width: 100%;
+
+}
+.fondo-2{
+    width: 100%;
+    filter: brightness(0.7);
 }
 .personaje{
     width: 12%;
@@ -220,5 +240,4 @@ transition: transform 0.3s ease;
     cursor: pointer;  
 
 }
-
 
